@@ -17,7 +17,7 @@ public class CategoryPage {
 
         root.setStyle("-fx-background-color: linear-gradient(to bottom, #0f172a, #1e293b);");
 
-        // 🔥 BACK BUTTON
+        // BACK BUTTON
         Button backBtn = new Button("⬅ Back");
         backBtn.setStyle(
                 "-fx-background-color: #334155;" +

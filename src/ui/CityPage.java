@@ -21,7 +21,7 @@ public class CityPage {
                 "-fx-background-color: linear-gradient(to bottom, #dbeafe, #bfdbfe);"
         );
 
-        // 🔥 LOGOUT BUTTON
+        // LOGOUT BUTTON
         Button logoutBtn = new Button("Logout");
 
         logoutBtn.setStyle(
@@ -115,7 +115,7 @@ public class CityPage {
                 new CategoryPage().show(stage, city);
             }
         });
-        Button backBtn = new Button("⬅ Back");
+        /*Button backBtn = new Button("⬅ Back");
 
         backBtn.setStyle(
                 "-fx-background-color: #334155;" +
@@ -125,10 +125,10 @@ public class CityPage {
 
         backBtn.setOnAction(e -> {
             new LoginPage().start(stage);
-        });
+        });*/
         // ADD ALL
         root.getChildren().addAll(
-                backBtn,
+                //backBtn,
                 logoutBtn,
                 icon,
                 title,

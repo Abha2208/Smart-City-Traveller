@@ -16,7 +16,7 @@ public class PlacesPage {
         root.setPadding(new Insets(20));
         root.setStyle("-fx-background-color: #0f172a;");
 
-        // 🔥 BACK BUTTON
+        // BACK BUTTON
         Button backBtn = new Button("⬅ Back");
 
         backBtn.setStyle(

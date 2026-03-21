@@ -16,7 +16,7 @@ public class LoginPage extends Application {
     @Override
     public void start(Stage stage) {
 
-        // 🔥 STEP 1: AUTO LOGIN CHECK (VERY FIRST)
+        //STEP 1: AUTO LOGIN CHECK
         File file = new File("remember.txt");
 
         if(file.exists()) {
@@ -28,7 +28,7 @@ public class LoginPage extends Application {
                 if(savedEmail != null && !savedEmail.isEmpty()) {
                     System.out.println("Auto Login: " + savedEmail);
                     new CityPage().show(stage);
-                    return; // 🔥 stop login page
+                    return; //stop login page
                 }
 
             } catch (Exception e) {
@@ -36,7 +36,7 @@ public class LoginPage extends Application {
             }
         }
 
-        // UI STARTS HERE
+        // UI
         VBox root = new VBox(20);
         root.setAlignment(Pos.TOP_CENTER);
         root.setPadding(new Insets(30));
@@ -101,7 +101,7 @@ public class LoginPage extends Application {
                         "-fx-underline: true;"
         );
 
-        // 🔥 LOGIN
+        // LOGIN
         loginBtn.setOnAction(e -> {
 
             String userEmail = email.getText().trim();
@@ -131,7 +131,7 @@ public class LoginPage extends Application {
 
                     status.setText("Login Success");
 
-                    // 🔥 SAVE FOR AUTO LOGIN
+                    //SAVE FOR AUTO LOGIN
                     BufferedWriter bw = new BufferedWriter(new FileWriter("remember.txt"));
                     bw.write(userEmail);
                     bw.close();
@@ -149,7 +149,7 @@ public class LoginPage extends Application {
             }
         });
 
-        // 🔥 SIGNUP
+        //  SIGNUP
         signupBtn.setOnAction(e -> {
 
             String userEmail = email.getText().trim();
@@ -194,7 +194,7 @@ public class LoginPage extends Application {
             }
         });
 
-        // 🔥 FORGOT PASSWORD
+        //  FORGOT PASSWORD
         forgot.setOnMouseClicked(e -> {
 
             TextInputDialog emailDialog = new TextInputDialog();
