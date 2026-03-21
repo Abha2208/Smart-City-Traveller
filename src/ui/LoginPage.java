@@ -1,15 +1,15 @@
 package ui;
 
-import javafx.application.Application;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
-import javafx.scene.Scene;
-import javafx.scene.control.*;
-import javafx.scene.layout.*;
-import javafx.stage.Stage;
+import javafx.application.Application;//main class (start,launch)
+import javafx.geometry.Insets;// spacing or padding
+import javafx.geometry.Pos;// set alignment
+import javafx.scene.Scene;// ui screen
+import javafx.scene.control.*;// imports ui buttons
+import javafx.scene.layout.*;// import layout containers
+import javafx.stage.Stage;// represent main window
 
-import java.sql.*;
-import java.io.*;
+import java.sql.*;// used for database connectivity
+import java.io.*;// used for input/output operations
 
 public class LoginPage extends Application {
 
