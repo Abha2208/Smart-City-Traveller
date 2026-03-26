@@ -4,6 +4,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
@@ -68,8 +69,12 @@ public class CategoryPage {
 
         // ADD ALL
         root.getChildren().addAll(backBtn, header, cards, nav);
+        ScrollPane scroll = new ScrollPane(root);
+        scroll.setFitToWidth(true);
+        scroll.setStyle("-fx-background: transparent; -fx-background-color: transparent;");
 
-        Scene scene = new Scene(root, 400, 700);
+        Scene scene = new Scene(scroll, 400, 700);
+       // Scene scene = new Scene(root, 400, 700);
         stage.setScene(scene);
         stage.setTitle("Category Page");
         stage.show();
